@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules/
+
+# Output directories
+dist/
+build/
+output.css
+
+# Python compiled files
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Tailwind CSS generated files
+tailwind.config.js

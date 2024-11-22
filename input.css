@@ -1,0 +1,40 @@
+/* import tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* Ensure the video doesn't overflow */
+}
+
+#hero-video {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the video is below other content */
+}
+@media screen and (min-width: 768px) {
+  #hero-video {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.item-container {
+  @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-0;
+}
+.item {
+  @apply relative overflow-hidden md:w-1/4;
+}
+.item-gradient {
+  @apply absolute top-0 bottom-0 left-0 right-0 group-hover:bg-gradient-to-b group-hover:from-transparent group-hover:to-gray-900 group-hover:opacity-50;
+}
+.btn {
+  @apply border-2 border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white px-4 py-2 tracking-wider;
+}
