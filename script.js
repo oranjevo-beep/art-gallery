@@ -1,5 +1,6 @@
 const menuBtn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.group.item');
 
@@ -19,3 +20,4 @@ const navToggle = () => {
   menu.classList.toggle('flex');
 };
 menuBtn.addEventListener('click', navToggle);
+overlay.addEventListener('click', navToggle);
